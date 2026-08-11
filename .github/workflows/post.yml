@@ -1,8 +1,8 @@
 name: post
 
+# triggered externally via the workflow_dispatch API — github's own cron
+# never fired on this repo
 on:
-  schedule:
-    - cron: "*/5 * * * *"
   workflow_dispatch: {}
 
 permissions:
